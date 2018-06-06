@@ -1,0 +1,12 @@
+[
+    {"title" : "Котик1", "full" : "https://cdn1.flamp.ru/23a51ce5e406b2b9bd5a475a5807fff1_1920.jpg",
+         "icon" : "http://dnpr.com.ua/sites/default/files/styles/for_main_wall_300x219/public/u37245/bc7b14f35f677b3c6aa6c383516add68.jpg?itok=hqAakxGw" },
+    {"title" : "Котик2", "full" : "https://cdn.flamp.ru/c7f45aff56a14dc2be2be12777c32b5f_1920.jpg", 
+        "icon" : "https://www.meme-arsenal.com/memes/892e644b88b39ecf3391c792b1808dcf.jpg" },
+    {"title" : "Котик3", "full" : "https://cdn.flamp.ru/ee425d8ab9a7cc2dc6b36dc655844eeb_1920.jpg", 
+        "icon" : "https://data.whicdn.com/images/258096695/superthumb.jpg?t=1473357194" },
+    {"title" : "Котик4", "full" : "https://i.ytimg.com/vi/Yj9qoa7vvZs/maxresdefault.jpg", 
+        "icon" : "http://i.ytimg.com/vi/LAoUEQ96Tqs/mqdefault.jpg" },
+    {"title" : "Котик5", "full" : "https://scontent-atl3-1.cdninstagram.com/vp/ef5bb1f3669d3c86f47a182a037b056b/5B6A5739/t51.2885-15/e35/30603879_622997868041516_7868602221980549120_n.jpg", 
+        "icon" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMPRbBhe02CJ9rXI-1c2xMddwbL6Udm50IOtwciJuOYiUxH_UoIw" }
+]
