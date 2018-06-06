@@ -120,13 +120,19 @@ MenuItem.prototype.superRender = function(menu) {
 
 window.onload = function() {
   var items = [
-    new MenuItem('https://geekbrains.ru', 'Home'),
-    new MenuItem('https://geekbrains.ru', 'News'),
-    new MenuItem('https://geekbrains.ru', 'Blog'),
+    new MenuItem('https://geekbrains.ru', 'Пункт1'),
+    new MenuItem('https://geekbrains.ru', 'Пункт2'),
+    new MenuItem('https://geekbrains.ru', 'Пункт3'),
+  ]
+
+  var superItems = [
+    new MenuItem('https://geekbrains.ru', 'Личный кабинет'),
+    new MenuItem('https://geekbrains.ru', 'Каталог'),
+    new MenuItem('https://geekbrains.ru', 'Промоакции'),
   ]
   
   var menu = new Menu('menu', 'menu', items);
-  var superMenu = new SuperMenu ('supermenu', 'supermenu', items, menu)
+  var superMenu = new SuperMenu ('supermenu', 'supermenu', superItems, menu)
   document.body.appendChild(menu.render());
   document.body.appendChild(superMenu.render());
 
