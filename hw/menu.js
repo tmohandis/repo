@@ -1,7 +1,21 @@
 function Container() {
   this.tagName = 'div';
   this.className = 'container';
-  this.id = 'container';
+  this.id = randomId(5);
+}
+
+function randomId(length) {
+  var chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz'.split('');
+
+  if (! length) {
+      length = Math.floor(Math.random() * chars.length);
+  }
+
+  var str = '';
+  for (var i = 0; i < length; i++) {
+      str += chars[Math.floor(Math.random() * chars.length)];
+  }
+  return str;
 }
 
 Container.prototype.render = function() {
@@ -14,7 +28,7 @@ Container.prototype.render = function() {
 
 Container.prototype.remove = function() {
   var element = document.getElementById(this.id);
-  element.remove();
+  element.parentNode.removeChild(element);
 }
 
 function Menu(className, id, items) {
