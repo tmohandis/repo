@@ -1,0 +1,2 @@
+var text = "Lorem 'ipsum' dolor sit amet, consectetur aren't adipiscing elit. 'Praesent' vulputate, massa 'ac' dictum elementum, risus leo laoreet felis, 'ac' porta lorem libero vitae nisi. Donec malesuada tortor 'leo', sit amet egestas lectus dignissim ut.";
+console.log(text.replace(/'\s/g,'" ').replace(/\s'/g,' "'));
