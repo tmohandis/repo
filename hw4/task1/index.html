@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .menu{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .tab{
+            text-align: center;
+            font-size: 20px;
+            line-height: 30px;
+            width: 200px;
+            height: 30px;
+            display: block;
+            border-color: blue;
+            background-color: blue;
+            color: aliceblue;
+        }
+        .tab:hover{
+                background-color: darkblue;
+            }
+        .discription {
+            display: none;
+            border-color: blue;
+            width: 600px;
+        }
+        .active{
+            background-color: aliceblue;
+            color: black;
+        }
+        .active:hover{
+            background-color: aliceblue;
+        }
+    
+    </style>
+    <script>
+
+        (function ($){
+            $(function() {
+                $('#menu').on('click', 'li:not(.active)', function() {
+                    $(this).addClass('active').siblings().removeClass('active');
+                    $('.discription').slideUp();
+                    $('.discription').eq($(this).index()).slideDown();
+                    
+                });
+
+            });
+
+        })(jQuery);
+    
+    </script>
+</head>
+<body>
+    <ul class="menu" id="menu">
+        <li class="tab">Первая вкладка</li>
+        <li class="tab">Вторая вкладка</li>
+        <li class="tab">Третья вкладка</li>
+    </ul>
+    <div class="discription">Lorem1 ipsum dolor, sit amet consectetur adipisicing elit. 
+        Doloribus, asperiores quibusdam accusantium culpa quo sapiente quae exercitationem recusandae error, 
+        labore esse modi similique dicta eius architecto impedit magni soluta eaque?</div>
+    <div class="discription">Lorem2 ipsum dolor sit, amet consectetur adipisicing elit. 
+        Dolor itaque quidem esse repudiandae provident, atque eveniet obcaecati vero quod alias rem expedita quia molestiae 
+        unde amet illum cumque cum! Blanditiis?</div>
+    <div class="discription">Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Incidunt reiciendis, 
+        veritatis reprehenderit repellat ratione, quod explicabo facere, vel facilis assumenda eos accusantium sunt? 
+        Excepturi magnam vel blanditiis veritatis sed voluptatum.</div>
+ 
+    
+</body>
+</html>

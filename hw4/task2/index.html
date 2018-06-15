@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+
+        (function($) {
+            $(function (){
+                $.get('json.json', {}, function(cities){
+                    cities.forEach(element => {
+                        var $option = $('<option/>', {
+                            text: element.name
+                        });
+                        $('#city').append($option);
+                    });
+                }, 'json');
+            });
+        })(jQuery);
+
+
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="name">Имя</label><input type="text" id="name"><br>
+        <label for="phone">Телефон</label><input type="text" id="phone"><br>
+        <label for="city">Город</label><select name="city" id="city"></select><br>
+        <label for="email">Email</label><input type="text" id="email"><br>
+        <label for="texl">Текст</label><input type="text" id="text"><br>
+        <input class="button" type="submit" id="button">
+    </form>
+    
+</body>
+</html>
