@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="posts.js"></script>
+    <style>
+      .container{
+        display: flex;
+        justify-content: space-around;
+      }
+      .posts{
+        width: 30%;
+      }
+      .form{
+        width: 30%;
+      }
+      .moderating{
+        width: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="form" id="form">
+          <h2>Ввод комментария</h2>
+            <label for="name">Введите имя</label><input type="text" name="name" id="name"><br>
+            <label for="text">Напишите текст</label><br><textarea name="text" id="text" cols="30" rows="10"></textarea><br>
+            <button id="send">Отправить</button>
+        </div>
+        <div class="moderating" id="moderating"><h2>Модерация</h2></div>
+        <div class="posts" id="posts"><h2>Лента</h2></div>
+        
+    </div>
+    
+  </body>
+</html>
