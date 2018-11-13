@@ -1,0 +1,843 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400,700');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Montserrat;
+    color: #212121;
+}
+
+.site-padding {
+    padding: 0 98px;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.slider {
+    height: 800px;
+    position: relative;
+}
+
+.slider-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider-content {
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    padding-top: 63px;
+    opacity: 0.7;
+}
+
+.logo:hover {
+    opacity: 1;
+}
+
+.slider-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    width: 490px;
+    justify-content: space-between;
+    margin-top: 53px;
+}
+
+.menu li {
+    list-style-type: none;
+    display: block;
+
+}
+
+.menu li:hover a {
+    color: #212121;
+}
+
+.menu .active-link {
+    color: #212121;
+    border-bottom: 3px solid black;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 13px;
+    color: #8c8c8c;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.slider-text {
+    margin-top: 273px;
+    display: block;
+}
+
+.slider-text h4 {
+
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.slider-text h2 {
+
+    font-size: 62px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 72px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.slider-text p {
+    /*    margin-top: 24px;*/
+    width: 485px;
+    color: #6c6c6c;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.button {
+    text-align: center;
+    display: block;
+    font-family: Montserrat;
+    color: #212121;
+    text-decoration: none;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 45px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 212px;
+    height: 45px;
+    border-radius: 22.5px;
+    margin-top: 32px;
+    letter-spacing: 3px;
+}
+
+.button:hover {
+    background-color: #f9f9f9;
+}
+
+.button:active {
+    box-shadow: 0 0 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    position: relative;
+    top: 2px;
+}
+
+.slider-click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-click .click-active {
+    margin-top: 141px;
+    display: block;
+    border-radius: 50%;
+    background-color: #212121;
+    width: 40px;
+    height: 40px;
+}
+
+.slider-click a {
+    margin: 0 5px;
+    margin-top: 141px;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(33, 33, 33, 0.2);
+    width: 30px;
+    height: 30px;
+}
+
+.slider-click a:hover {
+    background-color: #212121;
+}
+
+.container-1 {
+    height: 609px;
+
+}
+
+.container-1-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-1-menu {
+    margin-top: 120px;
+    display: flex;
+    width: 300px;
+    list-style-type: none;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.container-1-menu li {
+    margin-bottom: -1px;
+}
+
+.container-1-menu a {
+    display: block;
+    padding: 19px 9px;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #6c6c6c;
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.container-1-menu li:hover a {
+    color: #212121;
+}
+
+.container-1-menu .active-link-1 {
+    color: #212121;
+    border-bottom: 3px solid #212121;
+}
+
+.container-1-header .explore-link {
+    color: #212121;
+    margin-top: 138px;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.container-1-header .explore-link:hover {
+    color: #6c6c6c;
+}
+
+.container-1-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-1-content img:hover {
+    border-width: 1px;
+    border-color: #9c9c9c;
+    border-style: solid;
+    background-color: #ffffff;
+    opacity: 0.1;
+    width: 268px;
+    height: 268px;
+}
+
+.container-2 {
+    display: flex;
+}
+
+.container-2 > div {
+    width: 683px;
+    height: 683px;
+    padding-left: 51px;
+}
+
+.prod1 {
+    background-image: url(img/promo-img1.jpg)
+}
+
+.prod2 {
+    background-image: url(img/promo-img.jpg)
+}
+
+.container-2 h4 {
+    margin-top: 228px;
+    color: #1e88e5;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.container-2 h2 {
+
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.container-2 p {
+    /*    margin-top: 24px;*/
+    width: 485px;
+    color: #6c6c6c;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+
+.container-3-header {
+    display: flex;
+    justify-content: space-between;
+    height: 218px;
+    width: 1170px;
+}
+
+.container-3-header .trend {
+    margin-top: 119px;
+    font-family: Montserrat;
+    color: #212121;
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+    text-decoration: none;
+}
+
+.container-3-header .trend:hover {
+    color: #6c6c6c;
+}
+
+.container-3-header .explore-link {
+    color: #212121;
+    margin-top: 137px;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 24px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.container-3-header .explore-link:hover {
+    color: #6c6c6c;
+}
+
+.container-3 {
+    height: 1108px;
+}
+
+.container-3-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.container-3-content a {
+    margin: 15px 0;
+}
+
+.footer {
+    background-color: #f7f7f7;
+    height: 264px;
+    padding-top: 120px;
+}
+
+.footer h3 {
+    color: #6c6c6c;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer p {
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+}
+
+.footercontainer p {
+    margin-top: 24px;
+}
+
+.footercontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.usefulul {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.useful ul {
+    padding-right: 51.5px;
+}
+
+.useful li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.footercontainer > div {
+    margin-right: 40px;
+}
+
+.useful a {
+    font-family: Montserrat;
+    color: #212121;
+    text-decoration: none;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.botline {
+    margin-top: 59px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.footer input {
+    margin-top: 24px;
+    width: 353px;
+    height: 46px;
+    color: #6c6c6c;
+    font-size: 14px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    text-align: left;
+    padding-left: 17px;
+}
+
+.contact {
+    width: 221px;
+}
+
+.stay {
+    width: 363px;
+}
+
+.productsheader {
+    background-color: #f5f5f5;
+    height: 360px;
+}
+
+
+
+.produtsheadertext {
+    margin-top: 168px;
+    font-size: 62px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 100;
+    line-height: 62px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: left;
+
+}
+
+
+.productscontentmenu ul {
+    margin-top: 41px;
+    display: flex;
+    width: 300px;
+    list-style-type: none;
+    border-bottom: 1px solid #6c6c6c;
+}
+
+.productscontentmenu li {
+    margin-bottom: -1px;
+}
+
+.productscontentmenu a {
+    display: block;
+    padding: 19px 9px;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #6c6c6c;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: left;
+}
+
+.productscontentmenu a:hover {
+    color: #212121;
+}
+
+.productscontentmenu .active-link-2 {
+    color: #212121;
+    border-bottom: 3px solid black;
+}
+
+
+
+.productscontent {
+    height: 1965px;
+}
+
+
+.productscontent1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.productscontent1 a {
+    margin-top: 30px;
+
+}
+
+.productscontent1 a:hover {
+    outline: 1px solid #9c9c9c;
+    background-color: #ffffff;
+    opacity: 0.1;
+
+
+}
+
+@keyframes load {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.load {
+    margin-top: 71px;
+    display: flex;
+    justify-content: center;
+}
+
+.load:hover {
+    transform: rotate(360deg);
+    animation-name: load;
+    animation-duration: 2s;
+    animation-direction: reverse;
+    animation-delay: 0.2s;
+}
+
+}
+
+.breadcrumbs .active-link-3 {
+    color: #212121;
+}
+
+.breadcrumbs {
+    margin-top: 29px;
+    height: 70px;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.breadcrumbs ul {
+    margin-top: 0px;
+    width: 647px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.breadcrumbs a {
+    text-decoration: none;
+    color: #6c6c6c;
+    font-size: 17.99px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    transform: scaleY(1.0006);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.producttext p {
+    text-align: left;
+    width: 510px;
+    margin-left: 86.5px;
+}
+
+.underimage {
+    display: flex;
+    justify-content: center;
+}
+
+.productimg {
+    margin-top: 72px;
+    width: 683px;
+    text-align: center;
+}
+
+.productcontent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 126px;
+    text-align: center;
+}
+
+.producttext {
+    margin-top: 119px;
+    width: 683px;
+    text-align: center;
+}
+
+
+.producttext h2 {
+    font-size: 35.98px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    text-align: center;
+    transform: scaleY(1.0005);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.producttext h4 {
+    color: #e53935;
+    font-size: 18px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleY(1.0005);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+}
+
+.producttext h1 {
+    font-family: Gotham;
+    color: #212121;
+    font-size: 36px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 300;
+    line-height: 48px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+}
+
+.producttext .button1 {
+    text-decoration: none;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 31px;
+    margin-bottom: 49px;
+    font-family: Montserrat;
+    color: #ffffff;
+    font-size: 21.99px;
+    /* Приближение из-за подстановки шрифтов */
+    font-weight: 700;
+    line-height: 71px;
+    /* Приближение из-за подстановки шрифтов */
+    text-align: center;
+    transform: scaleY(1.0005);
+    /* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    background-color: #f44336;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 510px;
+    height: 71px;
+    border-radius: 35.5px;
+}
+
+.producttext .button1:hover {
+    background-color: #F74A4A;
+
+}
+
+.productimg .underimage img:hover {
+    outline: 1px solid #9c9c9c;
+    background-color: #ffffff;
+    opacity: 0.1;
+
+}
+
+.producttext .button1:active {
+    box-shadow: 0 0 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    position: relative;
+    top: 2px;
+}
+
+.product-height {
+    height: 707px;
+}
+
+.usefulul li:hover a {
+    color: #6c6c6c;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links a {
+    margin: 0 2.5px;
+}
+
+.links a:hover {
+    opacity: 0.5;
+}
+
+.itemhover {
+    text-align: center;
+    border-width: 1px;
+    border-color: #9c9c9c;
+    border-style: solid;
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 268px;
+    height: 268px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.item {
+    position: relative;
+}
+
+.item:hover .itemhover {
+    display: block;
+
+}
+
+.itemhover a {
+
+    margin-top: 62px;
+    margin-left: 111px;
+    margin-right: 111px;
+    line-height: 48px;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    font-family: Montserrat;
+    color: #212121;
+    display: block;
+    border-radius: 50%;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4.85px 0.15px rgba(33, 33, 33, 0.35);
+    width: 48px;
+    height: 48px;
+    letter-spacing: normal;
+}
+
+.itemhover a .div {
+    margin-top: 5px;
+}
+
+.itemhover h3 {
+    margin-top: 19px;
+    margin-bottom: 23px;
+}
+
+.container-3-content a:hover {
+    outline: 1px solid #9c9c9c;
+    background-color: #ffffff;
+    opacity: 0.1;
+}
+
+.sendbutton {
+    top: -5px;
+    right: 15px;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+}
+
+.send {
+    position: relative;
+    z-index: 1;
+}
+
+.breadcrumbs a:hover {
+    color: #212121;
+}
+
+.contactscontent {
+    display: flex;
+    justify-content: center;
+    margin-top: 71px;
+    margin-bottom: 122px;
+}
+
+.contactscontent a {
+    font-family: Montserrat;
+    color: #212121;
+    margin: 0 15px;
+    border-width: 1px;
+    border-color: #9c9c9c;
+    border-style: solid;
+    background-color: #ffffff;
+    opacity: 0.9;
+    width: 368px;
+    height: 368px;
+    text-align: center;
+    text-decoration: none;
+
+
+}
+
+.contactscontent h3{
+    font-family: Montserrat;
+color:  #212121;
+font-size: 21.91px;/* Приближение из-за подстановки шрифтов */
+font-weight: 700;
+line-height: 30px;/* Приближение из-за подстановки шрифтов */
+text-align: center;
+transform: scaleX(1.0041);/* свойства ширины и высоты были исключены, поскольку было выполнено трансформирование */
+    
+}
+
+.contactscontent h5{
+    margin-top: 16px;
+    font-family: Montserrat;
+color:  #6c6c6c;
+font-size: 14px;/* Приближение из-за подстановки шрифтов */
+font-weight: 700;
+line-height: 20.082px;/* Приближение из-за подстановки шрифтов */
+text-align: center;
+    
+}
+
+
+
+.contactscontent img{
+    margin: 48px 0;
+}
